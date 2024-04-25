@@ -1,6 +1,17 @@
 @import url(normalize.css);
 
 /* header */
+header {
+    background-image: url(../img/fondo1.jpeg);
+    background-size: cover;
+}
+
+#bg-transparencia {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 header svg,
 header img {
     display: block;
@@ -20,32 +31,33 @@ header a {
     color: initial;
 }
 
-#top-banner-container,
+/* #top-banner-container,
 #title-bar-container,
 #footer-container-s1,
 #footer-container-s2 {
     display: flex;
-}
+} */
 
 #top-banner,
 #title-bar,
 #footer-s1,
 #footer-s2 {
-    width: 1040px;
+    max-width: 1040px;
     padding: 0 20px;
     margin: 0 auto;
-    flex: 0 1 auto;
+    /* flex: 0 1 auto; */
     display: flex;
     align-items: center;
 }
 
 /* top-banner */
 #top-banner-container {
-    background-color: rgb(233, 229, 245);
+    /* background-color: rgb(233, 229, 245); */
+    background-color: #ffffffa6;
 }
 
 #top-banner {
-    height: 30px;
+    height: 40px;
     justify-content: end;
 }
 
@@ -95,6 +107,7 @@ header a {
 /* title-bar */
 #title-bar-container {
     background-color: white;
+    box-shadow: 0px 0px 10px #0000008f;
 }
 
 #title-bar {
@@ -163,8 +176,6 @@ header a {
     justify-content: center;
     height: 400px;
     width: 100%;
-    background-image: url(../img/fondo1.jpeg);
-    background-size: cover;
 }
 
 #search-prompt {
