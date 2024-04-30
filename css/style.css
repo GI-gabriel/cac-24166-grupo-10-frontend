@@ -94,6 +94,7 @@ a {
 .card-hov>a:hover>div::after {
     opacity: 0;
 }
+
 /* fin Card con transparencia */
 /* fin Clases genéricas */
 
@@ -185,8 +186,20 @@ header {
 }
 
 #title-bar #logo-texto {
+    width: 227px;
     margin-left: 20px;
     margin-right: 80px;
+}
+
+@media (max-width: 572px) {
+    #title-bar #logo-graf {
+        width: 60px;
+    }
+
+    #title-bar #logo-texto {
+        width: 150px;
+        margin-right: 20px;
+    }
 }
 
 #main-nav-bar {
@@ -237,7 +250,7 @@ header {
     display: none;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
     #menu-button {
         display: block;
     }
@@ -245,14 +258,11 @@ header {
     #main-nav-bar {
         display: none;
     }
-
-    #title-bar h1 {
-        font-size: 1.2em;
-    }
 }
 
-@media (max-width: 640px) {
-    #top-banner span {
+@media (max-width: 768px) {
+    #mail>span,
+    #tel>span {
         display: none;
     }
 
@@ -260,11 +270,21 @@ header {
         justify-content: center;
     }
 
-    #logo img {
-        width: 60px;
+    #top-banner>li {
+        border-style: none;
+        padding: 0;
+    }
+
+    #top-banner svg {
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #redes-banner>ul {
+        width: auto;
     }
 }
-
 /* fin title-bar */
 
 /* search-bar */
@@ -272,7 +292,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 400px;
     width: 100%;
 }
 
@@ -344,6 +363,27 @@ header {
 #search-form>div>input[type="submit"]:hover {
     background-color: rgb(167, 167, 235);
 }
+
+@media (max-width: 768px) {
+    #search-nav-bar {
+        display: none;
+    }
+}
+
+@media (max-width: 572px) {
+    #search-form>div {
+        flex-direction: column;
+    }
+
+    #search-form>div>select {
+        display: none;
+    }
+    
+    #search-form>div>input[type="text"] {
+        margin-bottom: 20px;
+    }
+
+}
 /* fin search bar */
 
 /* Sección búsqueda por categorías */
@@ -356,10 +396,11 @@ header {
 
 #categorias-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: -10px;
     margin-right: -10px;
 }
+
 #categorias-bar>li {
     flex: 0 1 auto;
 }
@@ -367,6 +408,17 @@ header {
 #categorias-bar img {
     max-width: 100%;
 }
+
+@media (max-width: 992px) {
+    #container-categorias {
+        max-width: 900px;
+    }
+
+    #categorias-bar {
+        flex-wrap: wrap;
+    }
+}
+
 /* fin Sección búsqueda por categorías */
 
 
@@ -460,4 +512,5 @@ header {
     font-weight: normal;
     font-size: 0.8rem;
 }
+
 /* fin footer */
