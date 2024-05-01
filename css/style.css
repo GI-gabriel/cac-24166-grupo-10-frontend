@@ -191,7 +191,7 @@ header {
     margin-right: 80px;
 }
 
-@media (max-width: 572px) {
+@media (max-width: 768px) {
     #title-bar #logo-graf {
         width: 60px;
     }
@@ -272,7 +272,6 @@ header {
 
     #main-nav-bar {
         display: none;
-        flex: auto;
         border-top: 1px solid black;
         width: 100%;
     }
