@@ -202,6 +202,13 @@ header {
     }
 }
 
+#logo-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #main-nav-bar {
     flex: 0 1 550px;
 }
@@ -255,12 +262,32 @@ header {
         display: block;
     }
 
+    #logo-menu {
+        width: 100%;
+    }
+
+    #title-bar {
+        flex-direction: column;
+    }
+
     #main-nav-bar {
         display: none;
+        flex: auto;
+        border-top: 1px solid black;
+        width: 100%;
+    }
+
+    #main-nav-bar>ul {
+        flex-direction: column;
+    }
+
+    #main-nav-bar span {
+        padding: 10px 0;
     }
 }
 
 @media (max-width: 768px) {
+
     #mail>span,
     #tel>span {
         display: none;
@@ -285,6 +312,7 @@ header {
         width: auto;
     }
 }
+
 /* fin title-bar */
 
 /* search-bar */
@@ -378,12 +406,13 @@ header {
     #search-form>div>select {
         display: none;
     }
-    
+
     #search-form>div>input[type="text"] {
         margin-bottom: 20px;
     }
 
 }
+
 /* fin search bar */
 
 /* Sección búsqueda por categorías */
