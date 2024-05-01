@@ -74,10 +74,20 @@
     <!-- title-bar -->
     <div id="title-bar-container">
       <div id="title-bar" class="mw1040 fx-h-c-space">
-        <a id="logo" href="#" title="LOREM Inmobiliaria">
-          <img id="logo-graf" src="img/logo.svg" alt="logo">
-          <img id="logo-texto" src="img/logo-texto.svg" alt="texto logo">
-        </a>
+        <div id="logo-menu">
+          <a id="logo" href="#" title="LOREM Inmobiliaria">
+            <img id="logo-graf" src="img/logo.svg" alt="logo">
+            <img id="logo-texto" src="img/logo-texto.svg" alt="texto logo">
+          </a>
+
+          <nav id="menu-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </nav>
+        </div>
 
         <nav id="main-nav-bar">
           <ul class="fx-h-c-space">
@@ -111,14 +121,6 @@
               </a>
             </li>
           </ul>
-        </nav>
-
-        <nav id="menu-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-          </svg>
         </nav>
       </div>
     </div>
@@ -340,6 +342,8 @@
       </section>
     </div>
   </footer>
+
+  <script src="/js/boton-menu.js"></script>
 </body>
 
 </html>
