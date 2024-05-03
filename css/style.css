@@ -310,6 +310,7 @@ header {
 
 /* search-bar */
 #search-bar {
+    background-image: url("img/img-countryview.png");
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -526,3 +527,8 @@ button:hover{
     font-size: 0.8rem;
 }
 /* fin footer */
+
+/* Estilos de propiedades.html */
+
+
+/* Fin Estilos de propiedades.html */
