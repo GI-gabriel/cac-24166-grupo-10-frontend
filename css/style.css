@@ -417,18 +417,18 @@ button:hover{
     margin-bottom: 100px;
 }
 
-#categorias-bar {
+#categorias-bar, #ofertas-bar {
     display: flex;
     justify-content: center;
     margin-left: -10px;
     margin-right: -10px;
 }
 
-#categorias-bar>li {
+#categorias-bar>li, #ofertas-bar>li {
     flex: 0 1 auto;
 }
 
-#categorias-bar img {
+#categorias-bar, #ofertas-bar img {
     max-width: 100%;
 }
 
@@ -437,7 +437,7 @@ button:hover{
         max-width: 900px;
     }
 
-    #categorias-bar {
+    #categorias-bar, #ofertas-bar {
         flex-wrap: wrap;
     }
 }
