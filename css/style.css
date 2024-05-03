@@ -401,6 +401,13 @@ header {
 }
 /* fin search bar */
 
+/* Estilos de botón */
+button:hover{
+    cursor:pointer;
+}
+
+/* Fin Estilos de botón */
+
 /* Sección búsqueda por categorías */
 #container-categorias {
     padding: 0 20px;
