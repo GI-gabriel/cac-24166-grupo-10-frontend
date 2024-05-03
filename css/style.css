@@ -535,6 +535,7 @@ button:hover{
     bottom: 45px;
     display: flex;
     flex-direction: column;
+    z-index: 99999;
 }
 
 /* Fin Estilos de botón Whatsapp */
