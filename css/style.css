@@ -310,7 +310,7 @@ header {
 
 /* search-bar */
 #search-bar {
-    background-image: url("img/img-countryview.jpg");
+    background-image: url("/img/img-countryview.jpg");
     display: flex;
     flex-direction: column;
     justify-content: center;
