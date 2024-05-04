@@ -594,6 +594,49 @@ button:hover {
 #direc_ svg {
     margin-right: 4px;
 }
+
+@media (max-width: 992px) {
+    #mapa-sitio {
+        display: none;
+    }
+
+    #nosotros {
+        padding-bottom: 20px;
+    }
+
+    #contacto {
+    }
+
+    #footer-s1 {
+        padding-bottom: 20px;
+        max-width: 750px;
+    }
+
+    #footer-s2 {
+        flex-direction: column;
+        align-items: start;
+        gap: 0.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer-s1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nosotros,
+    #contacto {
+        width: 300px;
+        flex: auto;
+    }
+}
+
+@media (max-width: 572px) {
+    #footer-s2 h3{
+        font-size: 0.65rem;
+    }
+}
 /* fin footer */
 
 /* Estilos de botón Whatsapp */
@@ -614,20 +657,22 @@ button:hover {
 .whatsapp-icon {
     margin-top: 13px;
 }
+
 /* Fin Estilos de botón Whatsapp */
 
 
 /* Inicio Estilos de Tasaciones */
-#container-tasaciones{
+#container-tasaciones {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(122,82,161,0.5943627450980392) 38%, rgba(255,255,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(122, 82, 161, 0.5943627450980392) 38%, rgba(255, 255, 255, 1) 100%);
 }
 
-.tasaciones{
+.tasaciones {
     text-align: center;
 }
+
 /* Fin Estilos de Tasaciones */
