@@ -435,7 +435,7 @@ button:hover {
     flex: 0 1 auto;
 }
 
-#categorias-bar,
+#categorias-bar img,
 #ofertas-bar img {
     max-width: 100%;
 }
