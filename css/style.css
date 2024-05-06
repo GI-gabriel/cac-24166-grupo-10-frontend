@@ -31,6 +31,33 @@ a {
 /* fin Normalize */
 
 /* Clases genéricas */
+/* Tipografías */
+.istok-web-regular {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.istok-web-bold {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.istok-web-regular-italic {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.istok-web-bold-italic {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* fin Tipografías */
+
 .mw1040 {
     max-width: 1040px;
     padding: 0 20px;
@@ -132,6 +159,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: end;
+    font-size: 1rem;
 }
 
 #top-banner>li {
@@ -148,6 +176,7 @@ header {
 #tel,
 #direc {
     display: flex;
+    align-items: center;
 }
 
 #mail svg,
@@ -210,6 +239,7 @@ header {
 
 #main-nav-bar {
     flex: 0 1 550px;
+    font-size: 1.1rem;
 }
 
 #main-nav-bar>ul {
@@ -265,7 +295,7 @@ header {
         width: 100%;
         overflow: hidden;
 
-        /* a 220px por JS*/
+        /* al largo por JS*/
         height: 0;
         transition: height 0.5s ease-in-out;
     }
@@ -276,7 +306,7 @@ header {
         flex-direction: column;
         position: absolute;
         width: 100%;
-        height: 220px;
+        height: 260px;
         bottom: 0;
     }
 
@@ -289,7 +319,7 @@ header {
 
     #mail>span,
     #tel>span {
-        display: none;
+        display: none !important;
     }
 
     #top-banner {
@@ -305,6 +335,8 @@ header {
         margin: 0;
         padding-left: 10px;
         padding-right: 10px;
+        /* Necesario después de agregar estilos bootstrap */
+        width: 100%;
     }
 
     #redes-banner>ul {
@@ -417,12 +449,19 @@ button:hover {
 /* Fin Estilos de botón */
 
 /* Sección búsqueda por categorías */
+main h2 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
 #container-categorias,
 #container-ofertas {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 #categorias-bar,
@@ -605,8 +644,7 @@ button:hover {
         padding-bottom: 20px;
     }
 
-    #contacto {
-    }
+    #contacto {}
 
     #footer-s1 {
         padding-bottom: 20px;
@@ -634,10 +672,11 @@ button:hover {
 }
 
 @media (max-width: 572px) {
-    #footer-s2 h3{
+    #footer-s2 h3 {
         font-size: 0.65rem;
     }
 }
+
 /* fin footer */
 
 /* Estilos de botón Whatsapp */
