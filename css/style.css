@@ -130,7 +130,7 @@ button:hover {
 /* fin Clases genéricas */
 
 #top-banner-container {
-    background-color: rgb(233, 221, 236);
+    background-color: #c4b9c6;
 }
 
 #top-banner {
@@ -173,7 +173,7 @@ button:hover {
 
 /* title-bar */
 #title-bar-container {
-    background-color: white;
+    background-color: #e9ddec;
 }
 
 #logo {
