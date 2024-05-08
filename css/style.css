@@ -325,95 +325,83 @@ button:hover {
 
 /* search-bar */
 #search-bar {
-    background-image: url("../img/img-countryview.jpg");
+    background-image: url("../img/fondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    position: relative;
+    padding: 30px;
 }
 
-#search-prompt {
-    padding: 30px 0;
-    margin: 0 auto;
-    width: fit-content;
-    font-size: calc(18px + 2vw);
-    color: black;
+#search-bar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(255,255,255,0.3) 40%, rgba(255,255,255,0.7) 60%)
 }
 
 #search-nav-bar,
-#search-form {
-    padding: 30px 0;
+#search-prompt {
+    z-index: 2;
+}
+
+#search-prompt {
+    padding-bottom: 40px;
     margin: 0 auto;
     width: fit-content;
+    font-size: calc(28px + 1vw);
+    text-shadow: 2px 2px white;
+    text-align: center;
+    color: black;
+}
+
+#search-nav-bar {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#search-nav-bar>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
 }
 
 #search-nav-bar {
     padding-bottom: 10px;
 }
 
-#search-form {
-    padding-top: 10px;
-}
-
 #search-nav-bar>ul button {
-    padding: 20px;
-    margin: 0 8px;
-    background-color: white;
     border-style: none;
+    padding: 15px 20px;
+    background-color: rgb(255, 228, 163);
     border-radius: 5px;
 }
 
 #search-nav-bar>ul button:hover {
-    background-color: rgb(139, 139, 236);
-}
-
-#search-form>div {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    padding: 10px;
-}
-
-#search-form>div>select,
-#search-form>div>input {
-    padding: 15px;
-    margin: 0 8px;
-    border-style: none;
-    background-color: white;
-    border-radius: 5px;
-}
-
-#search-form>div>select {
-    margin-left: 0;
-}
-
-#search-form>div>input[type="submit"] {
-    margin-right: 0;
-    background-color: rgb(139, 139, 236);
-}
-
-#search-form>div>input[type="submit"]:hover {
-    background-color: rgb(167, 167, 235);
+    background-color: rgb(238, 180, 44)
 }
 
 @media (max-width: 768px) {
     #search-nav-bar {
-        display: none;
+        max-width: 420px;
     }
 }
 
 @media (max-width: 572px) {
-    #search-form>div {
-        flex-direction: column;
+    #search-nav-bar {
+        max-width: 400px;
     }
-
-    #search-form>div>select {
-        display: none;
-    }
-
-    #search-form>div>input[type="text"] {
-        margin-bottom: 20px;
-    }
-
 }
 /* fin search bar */
 
