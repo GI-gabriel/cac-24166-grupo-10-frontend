@@ -181,9 +181,13 @@ button:hover {
 /* title-bar */
 #title-bar-container {
     background-color: #e9ddec;
-    /* position: fixed;
+    z-index: 9999;
+}
+
+.sticky{
+    position: fixed;
     top: 0;
-    width: 100%; */
+    width: 100%;
 }
 
 #logo {
