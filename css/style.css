@@ -92,17 +92,24 @@ a {
     border-radius: 5px;
 }
 
-.card-hov>a>h3 {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    border-radius: 2px;
-    width: fit-content;
+.card-hov>a>span {
+    display: block;
+    width: fit-content;;
+    padding-right: 15px;
     position: absolute;
     bottom: 15px;
     left: 15px;
+}
+
+.card-hov>a h3 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
 }
 
 .card-hov>a>div::after {
@@ -673,3 +680,27 @@ main h2 {
     text-align: center;
 }
 /* Fin Estilos de Tasaciones */
+
+/* Propiedades */
+#filtros h4 {
+    font-size: 0.9rem;
+}
+
+#prop-filtros-title h2 {
+    font-size: 1.3rem;
+}
+
+#prop-filtros h4 {
+    font-size: 0.9rem;
+}
+
+#prop-filtros li {
+    font-size: 0.85rem;
+}
+
+#prop-title h1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+/* fin Propiedades */
