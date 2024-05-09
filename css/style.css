@@ -685,13 +685,68 @@ main h2 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(122, 82, 161, 0.5943627450980392) 38%, rgba(255, 255, 255, 1) 100%);
+    background: rgb(250, 241, 252);
+    background: linear-gradient(90deg, rgb(250, 227, 255) 0%, rgba(122, 82, 161, 0.5943627450980392) 38%, rgba(255, 255, 255, 1) 100%);
 }
 
 .tasaciones {
     text-align: center;
+    font-size: 28px;
 }
+
+.tasa{
+    display: inline;
+    /* Animación de los iconos de tasaciones */
+    animation: animacionTas 2s ease 2s 1 normal none;
+}
+
+/* Copy this code after the above code */
+@keyframes animacionTas {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0.5;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
 /* Fin Estilos de Tasaciones */
 
 /* Propiedades */
