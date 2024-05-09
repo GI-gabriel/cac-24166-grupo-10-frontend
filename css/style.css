@@ -92,7 +92,7 @@ a {
     border-radius: 5px;
 }
 
-.card-hov>a>span {
+.card-hov>a div.texto-card {
     display: block;
     width: fit-content;;
     padding-right: 15px;
@@ -112,7 +112,7 @@ a {
     text-align: center;
 }
 
-.card-hov>a>div::after {
+.card-hov>a div.overlay-card::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -124,7 +124,7 @@ a {
     transition: opacity 0.3s ease;
 }
 
-.card-hov>a:hover>div::after {
+.card-hov>a:hover div.overlay-card::after {
     opacity: 0;
 }
 /* fin Card con transparencia */
@@ -388,7 +388,9 @@ button:hover {
     padding-bottom: 10px;
 }
 
-#search-nav-bar button {
+#search-nav-bar a {
+    display: block;
+    text-align: center;
     border-style: none;
     padding: 15px 20px;
     background-color: rgb(255, 228, 163);
@@ -396,7 +398,11 @@ button:hover {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
-#search-nav-bar>ul button:hover {
+#search-nav-bar a>h3 {
+    font-size: 1rem;
+}
+
+#search-nav-bar a:hover {
     background-color: rgb(238, 180, 44)
 }
 
@@ -404,7 +410,7 @@ button:hover {
     #search-nav-bar {
         max-width: 420px;
     }
-    #search-nav-bar button {
+    #search-nav-bar a {
         width: 200px;
     }
 }
@@ -488,14 +494,19 @@ main h2 {
     flex-direction: column;
 }
 
-#footer-s1 #logo-graf {
+#logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#footer-s1 #logo-graf-footer {
     width: 60px;
     flex: 0 1 auto;
 }
 
-#footer-s1 #logo-texto {
+#footer-s1 #logo-texto-footer {
     width: 136px;
-    ;
     flex: 0 1 auto;
     margin-left: 12px;
 }
