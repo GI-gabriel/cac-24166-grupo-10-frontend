@@ -145,16 +145,16 @@
       <div id="search-nav-bar">
         <ul>
           <li>
-            <button id="boton-comprar"><a href="comprar.html">Comprar</a></button>
+            <a href="comprar.html"><h3>Comprar</h3></a>
           </li>
           <li>
-            <button id="boton-comprar">Alquilar</button>
+            <a href="alquilar.html"><h3>Alquilar</h3></a>
           </li>
           <li>
-            <button id="boton-comprar">Emprendimientos</button>
+            <a href="emprendimientos.html"><h3>Emprendimientos</h3></a>
           </li>
           <li>
-            <button id="boton-comprar">Oportunidades</button>
+            <a href="oportunidades.html"><h3>Oportunidades</h3></a>
           </li>
         </ul>
       </div>
@@ -169,14 +169,10 @@
       <div id="carousel">
         <div style="border: 1px yellow solid;">
           <h3>Carousel</h3>
-          <img src="img/pag-en-constr.png" width="40px" alt="">
+          <img src="img/pag-en-constr.png" style="width: 40px;"  alt="en construcción">
           En construcción...
         </div>
         <hr>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
       </div>
     </section>
 
@@ -188,10 +184,10 @@
           <article>
             <div class="card-hov">
               <a href="#">
-                <div>
+                <div class="overlay-card">
                   <img src="img/img-casa.jpg" alt="casa">
                 </div>
-                <span><h3>Casas</h3></span>
+                <div class="texto-card"><h3>Casas</h3></div>
               </a>
             </div>
           </article>
@@ -201,10 +197,10 @@
           <article>
             <div class="card-hov">
               <a href="#">
-                <div>
+                <div class="overlay-card">
                   <img src="img/img-depto.jpg" alt="casa">
                 </div>
-                <span><h3>Departamentos</h3></span>
+                <div class="texto-card"><h3>Departamentos</h3></div>
               </a>
             </div>
           </article>
@@ -214,10 +210,10 @@
           <article>
             <div class="card-hov">
               <a href="#">
-                <div>
+                <div class="overlay-card">
                   <img src="img/img-ph.jpg" alt="casa">
                 </div>
-                <span><h3>PH</h3></span>
+                <div class="texto-card"><h3>PH</h3></div>
               </a>
             </div>
           </article>
@@ -227,10 +223,10 @@
           <article>
             <div class="card-hov">
               <a href="#">
-                <div>
+                <div class="overlay-card">
                   <img src="img/img-campo.jpg" alt="casa">
                 </div>
-                <span><h3>Terrenos y Lotes</h3></span>
+                <div class="texto-card"><h3>Terrenos y Lotes</h3></div>
               </a>
             </div>
           </article>
@@ -240,31 +236,13 @@
     <!-- fin Sección búsqueda por categorías -->
   </main>
 
-  <aside>
-    <div id="novedades">
-      <div id="slider"></div>
-
-      <div id="form-contacto"></div>
-    </div>
-
-    <div id="botones-rapidos">
-      <div id="mail"></div>
-      <div id="whatsapp"></div>
-    </div>
-
-    <div id="widgets">
-      <div id="boton-subir"></div>
-      <div id="boton-whatsapp"></div>
-    </div>
-  </aside>
-
   <footer>
     <div id="footer-container-s1" class="istok-web-regular">
       <section id="footer-s1" class="mw1040">
         <div id="nosotros">
-          <a id="logo" href="index.html" title="LOREM Inmobiliaria">
-            <img id="logo-graf" src="img/logo.svg" alt="logo">
-            <img id="logo-texto" src="img/logo-texto.svg" alt="texto logo">
+          <a id="logo-footer" href="index.html" title="LOREM Inmobiliaria">
+            <img id="logo-graf-footer" src="img/logo.svg" alt="logo">
+            <img id="logo-texto-footer" src="img/logo-texto.svg" alt="texto logo">
           </a>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo neque, quod, dolorem obcaecati
             voluptate earum hic dolore</p>
@@ -289,7 +267,7 @@
         <div id="contacto">
           <h2 class="footer-title">Contacto</h2>
           <div>
-            <a href="https://www.google.com/maps/" id="direc_" class="a-hov">
+            <a href="https://www.google.com/maps/" id="direc-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt"
                 viewBox="0 0 16 16">
                 <path
@@ -303,7 +281,7 @@
             </a>
           </div>
           <div>
-            <a href="tel:+5491140404040" id="tel_" class="a-hov">
+            <a href="tel:+5491140404040" id="tel-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone"
                 viewBox="0 0 16 16">
                 <path
@@ -313,7 +291,7 @@
             </a>
           </div>
           <div>
-            <a href="mailto:mail@mail.com" id="mail_" class="a-hov">
+            <a href="mailto:mail@mail.com" id="mail-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope"
                 viewBox="0 0 16 16">
                 <path
