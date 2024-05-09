@@ -162,14 +162,20 @@ button:hover {
 
 #mail,
 #tel,
-#direc {
+#direc,
+#mail-footer,
+#tel-footer,
+#direc-footer {
     display: flex;
     align-items: center;
 }
 
 #mail svg,
 #tel svg,
-#direc svg {
+#direc svg,
+#mail-footer svg,
+#tel-footer svg,
+#direc-footer svg {
     margin-right: 4px;
 }
 
