@@ -17,6 +17,6 @@ retorno, la optimización de imagenes para la web y el uso de favicon
 * El trabajo práctico deberá subirse a un servidor online y compartirse mediante un repositorio de Git. **(Mandatorio)**
 * La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. **(Mandatorio)**
 * El sitio web debe estar estructurado utilizando etiquetas semánticas HTML correctamente. Debe pasar la validación
-de [https://validator.w3.org/](url) sin errores. **(Mandatorio)**
+de https://validator.w3.org/ sin errores. **(Mandatorio)**
 * Utilizar iframes y/o íconos de FontAwesome y/o fuentes locales o bien de Google Fonts.Es optativo incluir algún
 elemento de Bootstrap.
