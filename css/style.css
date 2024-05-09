@@ -388,11 +388,12 @@ button:hover {
     padding-bottom: 10px;
 }
 
-#search-nav-bar>ul button {
+#search-nav-bar button {
     border-style: none;
     padding: 15px 20px;
     background-color: rgb(255, 228, 163);
     border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
 #search-nav-bar>ul button:hover {
@@ -402,6 +403,9 @@ button:hover {
 @media (max-width: 768px) {
     #search-nav-bar {
         max-width: 420px;
+    }
+    #search-nav-bar button {
+        width: 200px;
     }
 }
 
