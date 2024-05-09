@@ -711,3 +711,36 @@ main h2 {
     font-size: 2rem;
 }
 /* fin Propiedades */
+
+
+/* Animaciones del sobre y el télefono */
+.move:hover{
+    animation: customAni 2s ease 0s 1 normal none;
+}
+
+@keyframes customAni {
+    0% {
+      transform: translate(0);
+    }
+  
+    20% {
+      transform: translate(-2px, 2px);
+    }
+  
+    40% {
+      transform: translate(-2px, -2px);
+    }
+  
+    60% {
+      transform: translate(2px, 2px);
+    }
+  
+    80% {
+      transform: translate(2px, -2px);
+    }
+  
+    100% {
+      transform: translate(0);
+    }
+  }
+/* Fin de Animaciones del sobre y el télefono */
