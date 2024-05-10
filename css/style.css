@@ -394,7 +394,7 @@ button:hover {
     padding-bottom: 10px;
 }
 
-#search-nav-bar a {
+#search-nav-bar a, .container-tarjetas a {
     display: block;
     text-align: center;
     border-style: none;
