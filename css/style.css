@@ -1,5 +1,3 @@
-/* Normalize */
-@import url(normalize.css);
 @import url(menu-boton.css);
 
 svg,
@@ -9,6 +7,7 @@ img {
 
 ul,
 ol,
+li,
 h1,
 h2,
 h3,
@@ -31,6 +30,32 @@ a {
 /* fin Normalize */
 
 /* Clases genéricas */
+/* Tipografías */
+.istok-web-regular {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.istok-web-bold {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.istok-web-regular-italic {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.istok-web-bold-italic {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+/* fin Tipografías */
+
 .mw1040 {
     max-width: 1040px;
     padding: 0 20px;
@@ -67,20 +92,27 @@ a {
     border-radius: 5px;
 }
 
-.card-hov>a>h3 {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    border-radius: 2px;
-    width: fit-content;
+.card-hov>a div.texto-card {
+    display: block;
+    width: fit-content;;
+    padding-right: 15px;
     position: absolute;
     bottom: 15px;
     left: 15px;
 }
 
-.card-hov>a>div::after {
+.card-hov>a h3 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.card-hov>a div.overlay-card::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -92,38 +124,21 @@ a {
     transition: opacity 0.3s ease;
 }
 
-.card-hov>a:hover>div::after {
+.card-hov>a:hover div.overlay-card::after {
     opacity: 0;
 }
-
 /* fin Card con transparencia */
+
+/* Estilos de botón */
+button:hover {
+    cursor: pointer;
+}
+/* Fin Estilos de botón */
 /* fin Clases genéricas */
 
-/* header */
-header {
-    /* background-image: url(../img/fondo1.jpeg);
-    background-size: 100%;
-    background-repeat: no-repeat; */
-    background-color: rgb(233, 221, 236);
+#top-banner-container {
+    background-color: #c4b9c6;
 }
-
-/* fin header */
-
-/* #title-bar {
-    max-width: 1040px;
-    padding: 0 20px;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-} */
-
-/* top-banner */
-/* #top-banner-container>div {
-    max-width: 1040px;
-    padding: 0 20px;
-    margin: 0 auto;
-} */
 
 #top-banner {
     height: 40px;
@@ -132,6 +147,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: end;
+    font-size: 1rem;
 }
 
 #top-banner>li {
@@ -146,33 +162,33 @@ header {
 
 #mail,
 #tel,
-#direc {
+#direc,
+#mail-footer,
+#tel-footer,
+#direc-footer {
     display: flex;
+    align-items: center;
 }
 
 #mail svg,
 #tel svg,
-#direc svg {
+#direc svg,
+#mail-footer svg,
+#tel-footer svg,
+#direc-footer svg {
     margin-right: 4px;
 }
 
 #redes-banner>ul {
     width: 90px;
 }
-
 /* fin top-banner */
 
 /* title-bar */
 #title-bar-container {
-    background-color: white;
-    /* box-shadow: 0px 0px 10px #0000008f; */
+    background-color: #e9ddec;
+    z-index: 9999;
 }
-
-/* #title-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 #logo {
     display: flex;
@@ -210,6 +226,7 @@ header {
 
 #main-nav-bar {
     flex: 0 1 550px;
+    font-size: 1.1rem;
 }
 
 #main-nav-bar>ul {
@@ -223,12 +240,11 @@ header {
 
 #main-nav-bar span {
     display: block;
-    padding: 22px 0 18px 0;
+    padding: 20px 0;
 }
 
 #main-nav-bar span::after {
     display: block;
-    margin-top: 3px;
     content: "";
     height: 1px;
     background-color: rgb(139, 139, 236);
@@ -265,7 +281,7 @@ header {
         width: 100%;
         overflow: hidden;
 
-        /* a 220px por JS*/
+        /* al largo por JS*/
         height: 0;
         transition: height 0.5s ease-in-out;
     }
@@ -276,7 +292,7 @@ header {
         flex-direction: column;
         position: absolute;
         width: 100%;
-        height: 220px;
+        height: 260px;
         bottom: 0;
     }
 
@@ -286,10 +302,9 @@ header {
 }
 
 @media (max-width: 768px) {
-
     #mail>span,
     #tel>span {
-        display: none;
+        display: none !important;
     }
 
     #top-banner {
@@ -305,124 +320,122 @@ header {
         margin: 0;
         padding-left: 10px;
         padding-right: 10px;
+        /* Necesario después de agregar estilos bootstrap */
+        width: 100%;
     }
 
     #redes-banner>ul {
         width: auto;
     }
 }
-
 /* fin title-bar */
 
 /* search-bar */
 #search-bar {
-    background-image: url("../img/img-countryview.jpg");
+    background-image: url("../img/fondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    position: relative;
+    padding: 30px;
 }
 
-#search-prompt {
-    padding: 30px 0;
-    margin: 0 auto;
-    width: fit-content;
-    font-size: calc(18px + 2vw);
-    color: black;
+#search-bar::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(255,255,255,0.3) 40%, rgba(255,255,255,0.7) 60%)
 }
 
 #search-nav-bar,
-#search-form {
-    padding: 30px 0;
+#search-prompt {
+    z-index: 2;
+}
+
+#search-prompt {
+    padding-bottom: 40px;
     margin: 0 auto;
     width: fit-content;
+    font-size: calc(28px + 1vw);
+    text-shadow: 2px 2px white;
+    text-align: center;
+    color: black;
+}
+
+#search-nav-bar {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+#search-nav-bar>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
 }
 
 #search-nav-bar {
     padding-bottom: 10px;
 }
 
-#search-form {
-    padding-top: 10px;
-}
-
-#search-nav-bar>ul button {
-    padding: 20px;
-    margin: 0 8px;
-    background-color: white;
+#search-nav-bar a, .container-tarjetas a {
+    display: block;
+    text-align: center;
     border-style: none;
+    padding: 15px 20px;
+    background-color: rgb(255, 228, 163);
     border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
 }
 
-#search-nav-bar>ul button:hover {
-    background-color: rgb(139, 139, 236);
+#search-nav-bar a>h3 {
+    font-size: 1rem;
 }
 
-#search-form>div {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    padding: 10px;
-}
-
-#search-form>div>select,
-#search-form>div>input {
-    padding: 15px;
-    margin: 0 8px;
-    border-style: none;
-    background-color: white;
-    border-radius: 5px;
-}
-
-#search-form>div>select {
-    margin-left: 0;
-}
-
-#search-form>div>input[type="submit"] {
-    margin-right: 0;
-    background-color: rgb(139, 139, 236);
-}
-
-#search-form>div>input[type="submit"]:hover {
-    background-color: rgb(167, 167, 235);
+#search-nav-bar a:hover {
+    background-color: rgb(238, 180, 44)
 }
 
 @media (max-width: 768px) {
     #search-nav-bar {
-        display: none;
+        max-width: 420px;
+    }
+    #search-nav-bar a {
+        width: 200px;
     }
 }
 
 @media (max-width: 572px) {
-    #search-form>div {
-        flex-direction: column;
+    #search-nav-bar {
+        max-width: 400px;
     }
-
-    #search-form>div>select {
-        display: none;
-    }
-
-    #search-form>div>input[type="text"] {
-        margin-bottom: 20px;
-    }
-
 }
-
 /* fin search bar */
 
-/* Estilos de botón */
-button:hover {
-    cursor: pointer;
+/* Sección búsqueda por categorías */
+main h2 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
 }
 
-/* Fin Estilos de botón */
-
-/* Sección búsqueda por categorías */
 #container-categorias,
 #container-ofertas {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 #categorias-bar,
@@ -455,7 +468,6 @@ button:hover {
         flex-wrap: wrap;
     }
 }
-
 /* fin Sección búsqueda por categorías */
 
 /* footer */
@@ -482,14 +494,19 @@ button:hover {
     flex-direction: column;
 }
 
-#footer-s1 #logo-graf {
+#logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#footer-s1 #logo-graf-footer {
     width: 60px;
     flex: 0 1 auto;
 }
 
-#footer-s1 #logo-texto {
+#footer-s1 #logo-texto-footer {
     width: 136px;
-    ;
     flex: 0 1 auto;
     margin-left: 12px;
 }
@@ -514,17 +531,15 @@ button:hover {
     font-size: 1.2rem;
 }
 
-#mapa-sitio ul {
+#mapa-sitio>ul {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-top: -0.3rem;
 }
 
 #footer-s1 .hov-subr>span {
     font-size: 0.9rem;
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
     display: block;
     width: fit-content;
 }
@@ -605,9 +620,6 @@ button:hover {
         padding-bottom: 20px;
     }
 
-    #contacto {
-    }
-
     #footer-s1 {
         padding-bottom: 20px;
         max-width: 750px;
@@ -634,7 +646,7 @@ button:hover {
 }
 
 @media (max-width: 572px) {
-    #footer-s2 h3{
+    #footer-s2 h3 {
         font-size: 0.65rem;
     }
 }
@@ -658,7 +670,6 @@ button:hover {
 .whatsapp-icon {
     margin-top: 13px;
 }
-
 /* Fin Estilos de botón Whatsapp */
 
 
@@ -668,12 +679,166 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(122, 82, 161, 0.5943627450980392) 38%, rgba(255, 255, 255, 1) 100%);
+    background: rgb(250, 241, 252);
+    background: linear-gradient(90deg, rgb(250, 227, 255) 0%, rgba(122, 82, 161, 0.5943627450980392) 38%, rgba(255, 255, 255, 1) 100%);
 }
 
 .tasaciones {
     text-align: center;
+    font-size: 28px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
+.tasa{
+    display: inline;
+    /* Animación de los iconos de tasaciones */
+    animation: animacionTas 2s ease 2s 1 normal none;
+}
+
+/* Animacion de las tasaciones - ver arriba */
+@keyframes animacionTas {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0.5;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+/* Estilos de Cards - tarjetas de tasaciones */
+
+#container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 572px) {
+    /* Hacemos el menu sticky para mobile */
+    #title-bar-container{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    #container-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex: auto;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+  
+  /* Add some padding inside the card container */
+  .container-tarjetas {
+    padding: 2px 16px;
+  }
+  /* Fin estilos de Cards - tarjetas de tasaciones */
+
+
 /* Fin Estilos de Tasaciones */
+
+/* Propiedades */
+#filtros h4 {
+    font-size: 0.9rem;
+}
+
+#prop-filtros-title h2 {
+    font-size: 1.3rem;
+}
+
+#prop-filtros h4 {
+    font-size: 0.9rem;
+}
+
+#prop-filtros li {
+    font-size: 0.85rem;
+}
+
+#prop-title h1 {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+/* fin Propiedades */
+
+
+/* Animaciones del sobre y el télefono */
+.move:hover{
+    animation: customAni 2s ease 0s 1 normal none;
+}
+
+@keyframes customAni {
+    0% {
+      transform: translate(0);
+    }
+  
+    20% {
+      transform: translate(-2px, 2px);
+    }
+  
+    40% {
+      transform: translate(-2px, -2px);
+    }
+  
+    60% {
+      transform: translate(2px, 2px);
+    }
+  
+    80% {
+      transform: translate(2px, -2px);
+    }
+  
+    100% {
+      transform: translate(0);
+    }
+  }
+/* Fin de Animaciones del sobre y el télefono */

@@ -6,9 +6,9 @@ function iniciar() {
 
 function mostrarMenu() {
     var elemento = document.getElementById("main-nav-bar");
-    elemento.style.height = elemento.style.height != "220px" ? "220px" : "0";
+    elemento.style.height = elemento.style.height != "260px" ? "260px" : "0";
 
-    let estado = elemento.style.height != "220px" ? true : false;
+    let estado = elemento.style.height != "260px" ? true : false;
     anim_boton(estado);
 }
 
@@ -17,7 +17,7 @@ mql.onchange = (e) => {
     var elemento = document.getElementById("main-nav-bar");
     elemento.style.height = e.matches ? "0" : "auto";
 
-    let estado = elemento.style.height != "220px" ? true : false;
+    let estado = elemento.style.height != "260px" ? true : false;
     anim_boton(estado);
 };
 

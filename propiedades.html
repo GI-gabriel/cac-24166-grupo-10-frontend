@@ -4,16 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
   <title>LOREM Servicios Inmobiliarios</title>
 </head>
 
 <body>
   <header>
     <!-- top-banner -->
-    <div id="top-banner-container">
+    <div id="top-banner-container" class="istok-web-regular">
       <div class="mw1040">
         <ul id="top-banner">
           <li>
@@ -90,7 +100,7 @@
           </nav>
         </div>
 
-        <nav id="main-nav-bar">
+        <nav id="main-nav-bar" class="istok-web-regular">
           <ul class="fx-h-c-space">
             <li>
               <a href=index.html>
@@ -131,16 +141,19 @@
   <main>
     <!-- Sección ofertas -->
     <section id="container-ofertas">
-        <h2 style="text-align: center;">Ofertas</h2>
+      <div>
+        <h2 class="istok-web-bold">Ofertas</h2>
+      </div>
+
         <ul id="ofertas-bar">
           <li>
             <article>
               <div class="card-hov">
                 <a href="#">
-                  <div>
+                  <div class="overlay-card">
                     <img src="img/pileta.jpg" alt="casa">
                   </div>
-                  <h3>Canning 870</h3>
+                  <div class="texto-card"><h3>Canning 870</h3></div>                  
                 </a>
               </div>
             </article>
@@ -150,10 +163,10 @@
             <article>
               <div class="card-hov">
                 <a href="#">
-                  <div>
+                  <div class="overlay-card">
                     <img src="img/gotico.jpg" alt="casa">
                   </div>
-                  <h3>L'Mansion - Estilo gótico</h3>
+                  <div class="texto-card"><h3>L'Mansion - Estilo gótico</h3></div>
                 </a>
               </div>
             </article>
@@ -163,10 +176,10 @@
             <article>
               <div class="card-hov">
                 <a href="#">
-                  <div>
+                  <div class="overlay-card">
                     <img src="img/neutral.jpg" alt="casa">
                   </div>
-                  <h3>Punta Alta, con pileta</h3>
+                  <div class="texto-card"><h3>Punta Alta, con pileta</h3></div>
                 </a>
               </div>
             </article>
@@ -176,10 +189,10 @@
             <article>
               <div class="card-hov">
                 <a href="#">
-                  <div>
+                  <div class="overlay-card">
                     <img src="img/mansion.jpg" alt="casa">
                   </div>
-                  <h3>Mansión a estrenar - Longchamps</h3>
+                  <div class="texto-card"><h3>Mansión a estrenar - Longchamps</h3></div>
                 </a>
               </div>
             </article>
@@ -188,91 +201,430 @@
       </section>
       <!-- fin Sección ofertas -->
 
-    <!-- Sección búsqueda por categorías -->
-    <section id="container-categorias">
-      <h2 style="text-align: center;">Búsqueda por Categoría</h2>
-      <ul id="categorias-bar">
-        <li>
-          <article>
-            <div class="card-hov">
-              <a href="#">
-                <div>
-                  <img src="img/img-casa.jpg" alt="casa">
+      <!-- Propiedades -->
+      <section>
+        <div>
+          <h2 class="istok-web-bold">Propiedades</h2>
+        </div>
+  
+        <div class="container" style="padding-bottom: 60px;">
+          <div class="row">
+            <!-- Aside filtros -->
+            <aside id="prop-filtros" class="col-md-4 col-lg-2 mb-auto">
+              <div class="container-fluid bg-warning-subtle border border-warning-subtle rounded rounded-2">
+                <div id="prop-filtros-title" class="row py-0">
+                  <h2 class="istok-web-bold">Filtrar</h2>
                 </div>
-                <h3>Casas</h3>
-              </a>
+  
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <h4 class="mb-1">Ubicación</h4>
+                    <ul class="ms-3">
+                      <li>Lorem 1</li>
+                      <li>Lorem 2</li>
+                      <li>Lorem 3</li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <hr class="border border-warning-subtle opacity-100 d-none d-md-block">
+                    <h4 class="mb-1">Tipo de propiedad</h4>
+                    <ul class="ms-3">
+                      <li>Casa</li>
+                      <li>Departamento</li>
+                      <li>Terreno o lote</li>
+                      <li>Otro</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <hr class="border border-warning-subtle opacity-100">
+  
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <h4 class="mb-1">Tipo de operación</h4>
+                    <ul class="ms-3">
+                      <li>Venta</li>
+                      <li>Alquiler</li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <hr class="border border-warning-subtle opacity-100  d-none d-md-block">
+                    <h4 class="mb-1">Precio</h4>
+                    <ul class="ms-3">
+                      <li>30M</li>
+                      <li>30M - 50M</li>
+                      <li>50M - 120M</li>
+                      <li>>120M</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <hr class="border border-warning-subtle opacity-100">
+  
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <h4 class="mb-1">Dormitorios</h4>
+                    <ul class="ms-3">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>>2</li>
+                    </ul>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <hr class="border border-warning-subtle opacity-100 d-none d-md-block">
+                    <h4 class="mb-1">Baños</h4>
+                    <ul class="ms-3">
+                      <li>1</li>
+                      <li>2</li>
+                      <li>>2</li>
+                    </ul>
+                  </div>
+                </div>
+  
+                <hr class="border border-warning-subtle opacity-100">
+  
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <h4 class="mb-1">Superficie total</h4>
+                    <ul class="ms-3">
+                      <li>100</li>
+                      <li>100 - 300</li>
+                      <li>>300</li>
+                    </ul>
+                  </div>
+                  <div class="col-6 d-md-none"></div>
+                </div>
+  
+                <div class="row">
+                  <div class="col text-center">
+                    <button type="button" class="btn btn-secondary btn-sm my-3">Aplicar</button>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <!-- fin Aside filtros -->
+  
+            <!-- Separador para pantallas chicas -->
+            <div class="d-block d-md-none" style="height: 40px;"></div>
+  
+            <!-- Cards propiedades -->
+            <div class="col-md-8 col-lg-10 mb-auto">
+              <div class="row g-0">
+  
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-xl-3 col-lg-4">
+                      <img src="https://picsum.photos/550" class="img-fluid rounded-start" alt="foto propiedad">
+                    </div>
+                    <div class="col-xl-9 col-lg-8">
+                      <div class="card-body d-flex flex-column" style="height: 100%;">
+                        <div class="row mb-0">
+                          <div class="col-8">
+                            <h4 class="card-title">Departamento en Lorem ipsum dolor sit</h4>
+                          </div>
+                          <div class="col-4 text-end">
+                            <div class="d-flex flex-column">
+                              <div style="font-size: 0.7rem;">PRECIO</div>
+                              <div style="font-size: 2rem;"><span style="font-size: 0.7rem;">$USD</span> 80k</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <p class="card-text">Dirección: Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="row mb-auto">
+                          <p class="card-text">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            illo
+                            quos nobis! Vitae, eius ad!</p>
+                        </div>
+                        <div class="container-fluid px-0 mt-2 align-self-end">
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>NNN
+                                m<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>N</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
+                            </div>
+                          </div>
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                                </strong>NNNm<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>NNN</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong>Lorem, ipsum
+                                dolor.</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-xl-3 col-lg-4">
+                      <img src="https://picsum.photos/550" class="img-fluid rounded-start" alt="foto propiedad">
+                    </div>
+                    <div class="col-xl-9 col-lg-8">
+                      <div class="card-body d-flex flex-column" style="height: 100%;">
+                        <div class="row mb-0">
+                          <div class="col-8">
+                            <h4 class="card-title">Departamento en Lorem ipsum dolor sit</h4>
+                          </div>
+                          <div class="col-4 text-end">
+                            <div class="d-flex flex-column">
+                              <div style="font-size: 0.7rem;">PRECIO</div>
+                              <div style="font-size: 2rem;"><span style="font-size: 0.7rem;">$USD</span> 80k</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <p class="card-text">Dirección: Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="row mb-auto">
+                          <p class="card-text">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            illo
+                            quos nobis! Vitae, eius ad!</p>
+                        </div>
+                        <div class="container-fluid px-0 mt-2 align-self-end">
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>NNN
+                                m<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>N</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
+                            </div>
+                          </div>
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                                </strong>NNNm<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>NNN</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong>Lorem, ipsum
+                                dolor.</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-xl-3 col-lg-4">
+                      <img src="https://picsum.photos/550" class="img-fluid rounded-start" alt="foto propiedad">
+                    </div>
+                    <div class="col-xl-9 col-lg-8">
+                      <div class="card-body d-flex flex-column" style="height: 100%;">
+                        <div class="row mb-0">
+                          <div class="col-8">
+                            <h4 class="card-title">Departamento en Lorem ipsum dolor sit</h4>
+                          </div>
+                          <div class="col-4 text-end">
+                            <div class="d-flex flex-column">
+                              <div style="font-size: 0.7rem;">PRECIO</div>
+                              <div style="font-size: 2rem;"><span style="font-size: 0.7rem;">$USD</span> 80k</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <p class="card-text">Dirección: Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="row mb-auto">
+                          <p class="card-text">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            illo
+                            quos nobis! Vitae, eius ad!</p>
+                        </div>
+                        <div class="container-fluid px-0 mt-2 align-self-end">
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>NNN
+                                m<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>N</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
+                            </div>
+                          </div>
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                                </strong>NNNm<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>NNN</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong>Lorem, ipsum
+                                dolor.</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-xl-3 col-lg-4">
+                      <img src="https://picsum.photos/550" class="img-fluid rounded-start" alt="foto propiedad">
+                    </div>
+                    <div class="col-xl-9 col-lg-8">
+                      <div class="card-body d-flex flex-column" style="height: 100%;">
+                        <div class="row mb-0">
+                          <div class="col-8">
+                            <h4 class="card-title">Departamento en Lorem ipsum dolor sit</h4>
+                          </div>
+                          <div class="col-4 text-end">
+                            <div class="d-flex flex-column">
+                              <div style="font-size: 0.7rem;">PRECIO</div>
+                              <div style="font-size: 2rem;"><span style="font-size: 0.7rem;">$USD</span> 80k</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <p class="card-text">Dirección: Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="row mb-auto">
+                          <p class="card-text">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            illo
+                            quos nobis! Vitae, eius ad!</p>
+                        </div>
+                        <div class="container-fluid px-0 mt-2 align-self-end">
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>NNN
+                                m<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>N</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
+                            </div>
+                          </div>
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                                </strong>NNNm<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>NNN</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong>Lorem, ipsum
+                                dolor.</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card mb-3">
+                  <div class="row g-0">
+                    <div class="col-xl-3 col-lg-4">
+                      <img src="https://picsum.photos/550" class="img-fluid rounded-start" alt="foto propiedad">
+                    </div>
+                    <div class="col-xl-9 col-lg-8">
+                      <div class="card-body d-flex flex-column" style="height: 100%;">
+                        <div class="row mb-0">
+                          <div class="col-8">
+                            <h4 class="card-title">Departamento en Lorem ipsum dolor sit</h4>
+                          </div>
+                          <div class="col-4 text-end">
+                            <div class="d-flex flex-column">
+                              <div style="font-size: 0.7rem;">PRECIO</div>
+                              <div style="font-size: 2rem;"><span style="font-size: 0.7rem;">$USD</span> 80k</div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-2">
+                          <p class="card-text">Dirección: Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                        <div class="row mb-auto">
+                          <p class="card-text">Descripción: Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            illo
+                            quos nobis! Vitae, eius ad!</p>
+                        </div>
+                        <div class="container-fluid px-0 mt-2 align-self-end">
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>NNN
+                                m<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>N</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
+                            </div>
+                          </div>
+                          <div class="row my-0">
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                                </strong>NNNm<sup>2</sup></p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>NNN</p>
+                            </div>
+                            <div class="col-4">
+                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong>Lorem, ipsum
+                                dolor.</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
             </div>
-          </article>
-        </li>
+          </div>
+        </div>
+        </div>
+        <!-- fin Cards propiedades -->
+      </section>
+      <!-- fin Propiedades -->
 
-        <li>
-          <article>
-            <div class="card-hov">
-              <a href="#">
-                <div>
-                  <img src="img/img-depto.jpg" alt="casa">
-                </div>
-                <h3>Departamentos</h3>
-              </a>
-            </div>
-          </article>
-        </li>
 
-        <li>
-          <article>
-            <div class="card-hov">
-              <a href="#">
-                <div>
-                  <img src="img/img-ph.jpg" alt="casa">
-                </div>
-                <h3>PH</h3>
-              </a>
-            </div>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <div class="card-hov">
-              <a href="#">
-                <div>
-                  <img src="img/img-campo.jpg" alt="casa">
-                </div>
-                <h3>Terrenos y Lotes</h3>
-              </a>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </section>
-    <!-- fin Sección búsqueda por categorías -->
   </main>
 
-  <aside>
-    <div id="novedades">
-      <div id="slider"></div>
-
-      <div id="form-contacto"></div>
-    </div>
-
-    <div id="botones-rapidos">
-      <div id="mail"></div>
-      <div id="whatsapp"></div>
-    </div>
-
-    <div id="widgets">
-      <div id="boton-subir"></div>
-      <div id="boton-whatsapp"></div>
-    </div>
-  </aside>
-
   <footer>
-    <div id="footer-container-s1">
+    <div id="footer-container-s1" class="istok-web-regular">
       <section id="footer-s1" class="mw1040">
         <div id="nosotros">
-          <a id="logo" href="index.html" title="LOREM Inmobiliaria">
-            <img id="logo-graf" src="img/logo.svg" alt="logo">
-            <img id="logo-texto" src="img/logo-texto.svg" alt="texto logo">
+          <a id="logo-footer" href="index.html" title="LOREM Inmobiliaria">
+            <img id="logo-graf-footer" src="img/logo.svg" alt="logo">
+            <img id="logo-texto-footer" src="img/logo-texto.svg" alt="texto logo">
           </a>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo neque, quod, dolorem obcaecati
             voluptate earum hic dolore</p>
@@ -297,21 +649,21 @@
         <div id="contacto">
           <h2 class="footer-title">Contacto</h2>
           <div>
-            <a href="https://www.google.com/maps/" id="direc_" class="a-hov">
+            <a href="https://www.google.com/maps/" id="direc-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt"
                 viewBox="0 0 16 16">
                 <path
                   d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
               </svg>
-                <span>
-                  Alvear 2500, Villa Ballester <br>
-                  Buenos Aires - Argentina - B1653
-                </span>
+              <span>
+                Alvear 2500, Villa Ballester <br>
+                Buenos Aires - Argentina - B1653
+              </span>
             </a>
           </div>
           <div>
-            <a href="tel:+5491140404040" id="tel_" class="a-hov">
+            <a href="tel:+5491140404040" id="tel-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone"
                 viewBox="0 0 16 16">
                 <path
@@ -321,7 +673,7 @@
             </a>
           </div>
           <div>
-            <a href="mailto:mail@mail.com" id="mail_" class="a-hov">
+            <a href="mailto:mail@mail.com" id="mail-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope"
                 viewBox="0 0 16 16">
                 <path
@@ -365,7 +717,7 @@
       </section>
     </div>
 
-    <div id="footer-container-s2">
+    <div id="footer-container-s2" class="istok-web-bold">
       <section id="footer-s2" class="mw1040">
         <a href="terminos.html" class="a-hov">
           <h3 id="terminos">Términos y Condiciones</h3>

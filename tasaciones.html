@@ -4,16 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
   <title>LOREM Servicios Inmobiliarios</title>
 </head>
 
 <body>
   <header>
     <!-- top-banner -->
-    <div id="top-banner-container">
+    <div id="top-banner-container" class="istok-web-regular">
       <div class="mw1040">
         <ul id="top-banner">
           <li>
@@ -90,7 +100,7 @@
           </nav>
         </div>
 
-        <nav id="main-nav-bar">
+        <nav id="main-nav-bar" class="istok-web-regular">
           <ul class="fx-h-c-space">
             <li>
               <a href=index.html>
@@ -132,98 +142,55 @@
     <!-- Sección main tasaciones -->
     <section id="container-tasaciones">
         <div class="tasaciones">
-            Nuestro equipo de profesionales está capacitado para el mejor asesoramiento <br>
-            Contamos con una amplia experiencia en el mercado<br>
-            Desde casas y departamentos hasta alquileres 
+          <ul>
+            <li><img class="tasa" src="img/check-lg.svg" alt="logo">Nuestro equipo de profesionales está capacitado para el mejor asesoramiento </li>
+            <li><img class="tasa" src="img/check-lg.svg" alt="logo"><i class="bi bi-check-lg"></i>Contamos con una amplia experiencia en el mercado</li>
+            <li><img class="tasa" src="img/check-lg.svg" alt="logo"><i class="bi bi-check-lg"></i>Desde casas y departamentos hasta alquileres</li>
+          </ul>
         </div>
       </section>
       <!-- fin Sección main tasaciones -->
 
-    <!-- Sección búsqueda por categorías -->
-    <section id="container-categorias">
-      <h2 style="text-align: center;">Te pueden interesar las siguientes propiedades</h2>
-      <ul id="categorias-bar">
-        <li>
-          <article>
-            <div class="card-hov">
-              <a href="#">
-                <div>
-                  <img src="img/img-casa.jpg" alt="casa">
-                </div>
-                <h3>Casas</h3>
-              </a>
-            </div>
-          </article>
-        </li>
+    <!-- Sección Cards -->
+    <section id="container-cards">
+      <div class="card">
+        <img src="https://loremflickr.com/600/200" alt="Avatar" style="width:100%">
+        <div class="container-tarjetas">
+          <h4><b>Juan Pellegrino</b></h4>
+          <p>Broker Internacional</p>
+          <a href="#"><h3>Contactar</h3></a>
+        </div>
+      </div>
 
-        <li>
-          <article>
-            <div class="card-hov">
-              <a href="#">
-                <div>
-                  <img src="img/img-depto.jpg" alt="casa">
-                </div>
-                <h3>Departamentos</h3>
-              </a>
-            </div>
-          </article>
-        </li>
+      <div class="card">
+        <img src="https://loremflickr.com/600/200" alt="Avatar" style="width:100%">
+        <div class="container-tarjetas">
+          <h4><b>Victoria Bermúdez</b></h4>
+          <p>Broker</p>
+          <a href="#"><h3>Contactar</h3></a>
+        </div>
+      </div>
 
-        <li>
-          <article>
-            <div class="card-hov">
-              <a href="#">
-                <div>
-                  <img src="img/img-ph.jpg" alt="casa">
-                </div>
-                <h3>PH</h3>
-              </a>
-            </div>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <div class="card-hov">
-              <a href="#">
-                <div>
-                  <img src="img/img-campo.jpg" alt="casa">
-                </div>
-                <h3>Terrenos y Lotes</h3>
-              </a>
-            </div>
-          </article>
-        </li>
-      </ul>
+      <div class="card">
+        <img src="https://loremflickr.com/600/200" alt="Avatar" style="width:100%">
+        <div class="container-tarjetas">
+          <h4><b>Jonny Perez</b></h4>
+          <p>Broker</p>
+          <a href="#"><h3>Contactar</h3></a>
+        </div>
+      </div>
     </section>
-    <!-- fin Sección búsqueda por categorías -->
+    <!-- Fin Sección Cards -->
+
   </main>
 
-  <aside>
-    <div id="novedades">
-      <div id="slider"></div>
-
-      <div id="form-contacto"></div>
-    </div>
-
-    <div id="botones-rapidos">
-      <div id="mail"></div>
-      <div id="whatsapp"></div>
-    </div>
-
-    <div id="widgets">
-      <div id="boton-subir"></div>
-      <div id="boton-whatsapp"></div>
-    </div>
-  </aside>
-
   <footer>
-    <div id="footer-container-s1">
+    <div id="footer-container-s1" class="istok-web-regular">
       <section id="footer-s1" class="mw1040">
         <div id="nosotros">
-          <a id="logo" href="index.html" title="LOREM Inmobiliaria">
-            <img id="logo-graf" src="img/logo.svg" alt="logo">
-            <img id="logo-texto" src="img/logo-texto.svg" alt="texto logo">
+          <a id="logo-footer" href="index.html" title="LOREM Inmobiliaria">
+            <img id="logo-graf-footer" src="img/logo.svg" alt="logo">
+            <img id="logo-texto-footer" src="img/logo-texto.svg" alt="texto logo">
           </a>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo neque, quod, dolorem obcaecati
             voluptate earum hic dolore</p>
@@ -248,21 +215,21 @@
         <div id="contacto">
           <h2 class="footer-title">Contacto</h2>
           <div>
-            <a href="https://www.google.com/maps/" id="direc_" class="a-hov">
+            <a href="https://www.google.com/maps/" id="direc-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt"
                 viewBox="0 0 16 16">
                 <path
                   d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
               </svg>
-                <span>
-                  Alvear 2500, Villa Ballester <br>
-                  Buenos Aires - Argentina - B1653
-                </span>
+              <span>
+                Alvear 2500, Villa Ballester <br>
+                Buenos Aires - Argentina - B1653
+              </span>
             </a>
           </div>
           <div>
-            <a href="tel:+5491140404040" id="tel_" class="a-hov">
+            <a href="tel:+5491140404040" id="tel-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone"
                 viewBox="0 0 16 16">
                 <path
@@ -272,7 +239,7 @@
             </a>
           </div>
           <div>
-            <a href="mailto:mail@mail.com" id="mail_" class="a-hov">
+            <a href="mailto:mail@mail.com" id="mail-footer" class="a-hov">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope"
                 viewBox="0 0 16 16">
                 <path
@@ -316,7 +283,7 @@
       </section>
     </div>
 
-    <div id="footer-container-s2">
+    <div id="footer-container-s2" class="istok-web-bold">
       <section id="footer-s2" class="mw1040">
         <a href="terminos.html" class="a-hov">
           <h3 id="terminos">Términos y Condiciones</h3>
