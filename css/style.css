@@ -190,12 +190,6 @@ button:hover {
     z-index: 9999;
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
 #logo {
     display: flex;
     align-items: center;
@@ -758,6 +752,12 @@ main h2 {
 }
 
 @media (max-width: 572px) {
+    /* Hacemos el menu sticky para mobile */
+    #title-bar-container{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
     #container-cards{
         display: flex;
         flex-direction: column;
