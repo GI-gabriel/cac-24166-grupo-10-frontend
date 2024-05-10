@@ -692,6 +692,8 @@ main h2 {
 .tasaciones {
     text-align: center;
     font-size: 28px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .tasa{
