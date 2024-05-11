@@ -22,11 +22,11 @@ ol {
     list-style: none;
 }
 
-a {
+a,
+a:hover {
     color: initial;
     text-decoration: none;
 }
-
 /* fin Normalize */
 
 /* Clases genéricas */
@@ -341,6 +341,7 @@ button:hover {
     width: 100%;
     position: relative;
     padding: 30px;
+    margin-bottom: 5%;
 }
 
 #search-bar::before {
