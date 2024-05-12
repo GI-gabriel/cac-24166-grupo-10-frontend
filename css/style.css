@@ -809,6 +809,18 @@ main h2 {
     padding-bottom: 1rem;
     font-size: 2rem;
 }
+
+/* Bootstrap cards */
+.img-auto-round {
+    border-radius: 6px 6px 0 0;
+}
+
+@media (min-width: 992px) {
+    .img-auto-round {
+        border-radius: 6px 0 0 6px;    
+    }
+  }
+/* fin Bootstrap cards */
 /* fin Propiedades */
 
 
