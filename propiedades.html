@@ -204,448 +204,450 @@
       <!-- fin Sección ofertas -->
 
       <!-- Propiedades -->
-      <section>
-        <div>
-          <h2 class="istok-web-bold">Propiedades</h2>
-        </div>
-  
-        <div class="container" style="padding-bottom: 60px;">
-          <div class="row">
-            <!-- Aside filtros -->
-            <aside id="prop-filtros" class="col-md-4 col-lg-3 mb-auto">
-              <div class="container-fluid bg-warning-subtle border border-warning-subtle rounded rounded-2">
-                <div id="prop-filtros-title" class="row py-0">
-                  <h2 class="istok-web-bold">Filtrar</h2>
+      <section class="container mb-5">
+        <div><h2 class="istok-web-bold">Propiedades</h2></div>
+      
+        <div class="row">
+          <!-- Aside filtros -->
+          <aside class="col-lg-3">
+            <div id="prop-filtros" class="px-2 bg-warning-subtle border border-warning-subtle rounded rounded-2">
+          
+              <!-- Título del aside -->
+              <h2 style="font-size: 1.3rem;" class="istok-web-bold py-3">Filtrar</h2>
+          
+              <div id="filtros-container" class="d-flex flex-wrap">
+                <!-- Filtro ubicación -->
+                <div class="flex-grow-1 mb-4 mx-1 filtro-item">
+                  <h4 class="mb-1 text-center">Ubicación</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="1" id="chk-1-ubic">
+                      <label class="form-check-label" for="chk-1-ubic">Palermo</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="2" id="chk-2-ubic">
+                      <label class="form-check-label" for="chk-2-ubic">Belgrano</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="3" id="chk-3-ubic">
+                      <label class="form-check-label" for="chk-3-ubic">Nuñez</label>
+                    </li>
+                  </ul>
                 </div>
-  
-                <div class="row">
-                  <div class="col-6 col-md-12 mb-4">
-                    <h4 class="mb-1 text-center">Ubicación</h4>
-                    <ul class="list-group">
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="1" id="firstCheckbox">
-                        <label class="form-check-label" for="firstCheckbox">Palermo</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="2" id="secondCheckbox">
-                        <label class="form-check-label" for="secondCheckbox">Belgrano</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="3" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Nuñez</label>
-                      </li>                    
-                    </ul>
-                  </div>
-                  <div class="col-6 col-md-12 mb-4">
-                    <h4 class="mb-1 text-center">Tipo de propiedad</h4>
-                    <ul class="list-group">
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="1" id="firstCheckbox">
-                        <label class="form-check-label" for="firstCheckbox">Casa</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="2" id="secondCheckbox">
-                        <label class="form-check-label" for="secondCheckbox">Departamento</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="3" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">Terreno</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="4" id="fourthCheckbox">
-                        <label class="form-check-label" for="fourthCheckbox">Otro</label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>  
-                <div class="row">
-                    <div class="col-6 col-md-12 mb-4">
-                      <h4 class="mb-1 text-center">Tipo de operación</h4>
-                      <ul class="list-group">
-                        <li class="list-group-item list-group-item-warning">
-                          <input class="form-check-input me-1" type="checkbox" value="1" id="firstCheckbox">
-                          <label class="form-check-label" for="firstCheckbox">Venta</label>
-                        </li>
-                        <li class="list-group-item list-group-item-warning">
-                          <input class="form-check-input me-1" type="checkbox" value="2" id="secondCheckbox">
-                          <label class="form-check-label" for="secondCheckbox">Alquiler</label>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="col-6 col-md-12 mb-4">
-                    <h4 class="mb-1 text-center">Precio</h4>
-                    <ul class="list-group">
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="1" id="firstCheckbox">
-                        <label class="form-check-label" for="firstCheckbox">&lt;$USD30k</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="2" id="secondCheckbox">
-                        <label class="form-check-label" for="secondCheckbox">$USD30k - $USD50k</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="3" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">&gt;$USD120k</label>
-                      </li>
-                    </ul>              
-                  </div>
-                </div>  
-                <div class="row">
-                  <div class="col-6 col-md-12 mb-4">
-                    <h4 class="mb-1 text-center">Dormitorios</h4>
-                    <ul class="list-group list-group-horizontal">
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="1" id="firstCheckbox">
-                        <label class="form-check-label" for="firstCheckbox">1</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="2" id="secondCheckbox">
-                        <label class="form-check-label" for="secondCheckbox">2 / 3</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="4" id="fourthCheckbox">
-                        <label class="form-check-label" for="fourthCheckbox">&gt;3</label>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-6 col-md-12 mb-4">
-                    <h4 class="mb-1 text-center">Baños</h4>
-                    <ul class="list-group list-group-horizontal">
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="1" id="firstCheckbox">
-                        <label class="form-check-label" for="firstCheckbox">1</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="2" id="secondCheckbox">
-                        <label class="form-check-label" for="secondCheckbox">2</label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="3" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">&gt;2</label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>  
-                <div class="row">
-                  <div class="col-6 col-md-12 mb-4">
-                    <h4 class="mb-1 text-center">Superficie</h4>
-                    <ul class="list-group">
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="1" id="firstCheckbox">
-                        <label class="form-check-label" for="firstCheckbox">100m<sup>2</sup></label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="2" id="secondCheckbox">
-                        <label class="form-check-label" for="secondCheckbox">100m<sup>2</sup> - 500m<sup>2</sup></label>
-                      </li>
-                      <li class="list-group-item list-group-item-warning">
-                        <input class="form-check-input me-1" type="checkbox" value="3" id="thirdCheckbox">
-                        <label class="form-check-label" for="thirdCheckbox">&gt;500m<sup>2</sup></label>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-6 d-md-none"></div>
-                </div>  
-                <div class="row">
-                  <div class="col text-center">
-                    <button type="button" class="btn btn-primary btn-sm my-3">Aplicar</button>
-                  </div>
+          
+                <!-- Filtro tipo prop -->
+                <div class="flex-grow-1 mb-4 mx-1 filtro-item">
+                  <h4 class="mb-1 text-center">Tipo de propiedad</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="1" id="chk-1-prop">
+                      <label class="form-check-label" for="chk-1-prop">Casa</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="2" id="chk-2-prop">
+                      <label class="form-check-label" for="chk-2-prop">Departamento</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="3" id="chk-3-prop">
+                      <label class="form-check-label" for="chk-3-prop">Terreno</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="4" id="chk-4-prop">
+                      <label class="form-check-label" for="chk-4-prop">Otro</label>
+                    </li>
+                  </ul>
+                </div>
+          
+                <!-- Filtro tipo oper -->
+                <div class="flex-grow-1 mb-4 mx-1 filtro-item">
+                  <h4 class="mb-1 text-center">Tipo de operación</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="1" id="chk-1-oper">
+                      <label class="form-check-label" for="chk-1-oper">Venta</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="2" id="chk-2-oper">
+                      <label class="form-check-label" for="chk-2-oper">Alquiler</label>
+                    </li>
+                  </ul>
+                </div>
+          
+                <!-- Filtro precio -->
+                <div class="flex-grow-1 mb-4 mx-1 filtro-item">
+                  <h4 class="mb-1 text-center">Precio $USD</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="1" id="chk-1-precio">
+                      <label class="form-check-label" for="chk-1-precio">&lt;30k</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="2" id="chk-2-precio">
+                      <label class="form-check-label" for="chk-2-precio">30k - 50k</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="3" id="chk-3-precio">
+                      <label class="form-check-label" for="chk-3-precio">&gt;120k</label>
+                    </li>
+                  </ul>
+                </div>
+          
+                <!-- Filtro dormitorios -->
+                <div class="flex-grow-1 mb-4 mx-1 filtro-item">
+                  <h4 class="mb-1 text-center">Dormitorios</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="1" id="chk-1-dorm">
+                      <label class="form-check-label" for="chk-1-dorm">1</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="2" id="chk-2-dorm">
+                      <label class="form-check-label" for="chk-2-dorm">2 / 3</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="4" id="chk-3-dorm">
+                      <label class="form-check-label" for="chk-3-dorm">&gt;3</label>
+                    </li>
+                  </ul>
+                </div>
+          
+                <!-- Filtro baños -->
+                <div class="flex-grow-1 mb-4 mx-1 filtro-item">
+                  <h4 class="mb-1 text-center">Baños</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="1" id="chk-1-banos">
+                      <label class="form-check-label" for="chk-1-banos">1</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="2" id="chk-2-banos">
+                      <label class="form-check-label" for="chk-2-banos">2</label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="3" id="chk-3-banos">
+                      <label class="form-check-label" for="chk-3-banos">&gt;2</label>
+                    </li>
+                  </ul>
+                </div>
+          
+                <!-- Filtro superficie -->
+                <div class="flex-grow-1 mb-4 mx-1 filtro-item">
+                  <h4 class="mb-1 text-center">Superficie</h4>
+                  <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="1" id="chk-1-sup">
+                      <label class="form-check-label" for="chk-1-sup">100m<sup>2</sup></label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="2" id="chk-2-sup">
+                      <label class="form-check-label" for="chk-2-sup">100m<sup>2</sup> - 500m<sup>2</sup></label>
+                    </li>
+                    <li class="list-group-item list-group-item-warning">
+                      <input class="form-check-input me-1" type="checkbox" value="3" id="chk-3-sup">
+                      <label class="form-check-label" for="chk-3-sup">&gt;500m<sup>2</sup></label>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </aside>
-            <!-- fin Aside filtros -->
-  
-            <!-- Separador para pantallas chicas -->
-            <div class="d-block d-md-none" style="height: 40px;"></div>
-  
-            <!-- Cards propiedades -->
-            <div class="col-md-8 col-lg-9 mb-auto">
-              <div class="row g-0">
-  
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-xl-3 col-lg-4">
-                      <img src="img/2dpto-juramento.png" class="img-fluid img-auto-round" alt="foto propiedad">
-                    </div>
-                    <div class="col-xl-9 col-lg-8">
-                      <div class="card-body d-flex flex-column" style="height: 100%;">
-                        <div class="row mb-0">
-                          <div class="col-8">
-                            <h4 class="card-title">Departamento 2 ambientes en V. Urquiza </h4>
-                          </div>
-                          <div class="col-4 text-end">
-                            <div class="d-flex flex-column">
-                              <div style="font-size: 0.7rem;">PRECIO</div>
-                              <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 114k</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-2">
-                          <p class="card-text">Dirección: Juramento 5100</p>
-                        </div>
-                        <div class="row mb-auto">
-                          <p class="card-text">Expensas aprox. AR$114.000</p>
-                        </div>
-                        <div class="container-fluid px-0 mt-2 align-self-end">
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>42
-                                m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>1</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
-                            </div>
-                          </div>
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
-                                </strong>42m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>1</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
-                            </div>
-                          </div>
-                        </div>
-  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-xl-3 col-lg-4">
-                      <img src="img/3dpto_patio.png" class="img-fluid img-auto-round" alt="foto propiedad">
-                    </div>
-                    <div class="col-xl-9 col-lg-8">
-                      <div class="card-body d-flex flex-column" style="height: 100%;">
-                        <div class="row mb-0">
-                          <div class="col-8">
-                            <h4 class="card-title">Departamento c/ jardín en San Cristóbal</h4>
-                          </div>
-                          <div class="col-4 text-end">
-                            <div class="d-flex flex-column">
-                              <div style="font-size: 0.7rem;">PRECIO</div>
-                              <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 149.9k</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-2">
-                          <p class="card-text">Dirección: consultar</p>
-                        </div>
-                        <div class="row mb-auto">
-                          <p class="card-text">Apto crédito</p>
-                        </div>
-                        <div class="container-fluid px-0 mt-2 align-self-end">
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>50
-                                m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>1</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
-                            </div>
-                          </div>
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
-                                </strong>98m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>2</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
-                            </div>
-                          </div>
-                        </div>
-  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-xl-3 col-lg-4">
-                      <img src="img/4dpto_loft.png" class="img-fluid img-auto-round" alt="foto propiedad">
-                    </div>
-                    <div class="col-xl-9 col-lg-8">
-                      <div class="card-body d-flex flex-column" style="height: 100%;">
-                        <div class="row mb-0">
-                          <div class="col-8">
-                            <h4 class="card-title">Departamento 2 amb. t/ loft en Martínez</h4>
-                          </div>
-                          <div class="col-4 text-end">
-                            <div class="d-flex flex-column">
-                              <div style="font-size: 0.7rem;">PRECIO</div>
-                              <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 99.5k</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-2">
-                          <p class="card-text">Dirección: consultar</p>
-                        </div>
-                        <div class="row mb-auto">
-                          <p class="card-text">S/ expensas</p>
-                        </div>
-                        <div class="container-fluid px-0 mt-2 align-self-end">
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>51
-                                m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>1</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>No</p>
-                            </div>
-                          </div>
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
-                                </strong>51m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>1</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
-                            </div>
-                          </div>
-                        </div>
-  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-xl-3 col-lg-4">
-                      <img src="img/5costa-santa_Clara.png" class="img-fluid img-auto-round" alt="foto propiedad">
-                    </div>
-                    <div class="col-xl-9 col-lg-8">
-                      <div class="card-body d-flex flex-column" style="height: 100%;">
-                        <div class="row mb-0">
-                          <div class="col-8">
-                            <h4 class="card-title">Propiedad + quincho en S. Clara del Mar</h4>
-                          </div>
-                          <div class="col-4 text-end">
-                            <div class="d-flex flex-column">
-                              <div style="font-size: 0.7rem;">PRECIO</div>
-                              <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 120k</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-2">
-                          <p class="card-text">Dirección: consultar</p>
-                        </div>
-                        <div class="row mb-auto">
-                          <p class="card-text">RESERVADA!!</p>
-                        </div>
-                        <div class="container-fluid px-0 mt-2 align-self-end">
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>200
-                                m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>2</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
-                            </div>
-                          </div>
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
-                                </strong>300m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>3</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
-                            </div>
-                          </div>
-                        </div>
-  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
-                <div class="card mb-3">
-                  <div class="row g-0">
-                    <div class="col-xl-3 col-lg-4">
-                      <img src="img/6costa-San_B.png" class="img-fluid img-auto-round" alt="foto propiedad">
-                    </div>
-                    <div class="col-xl-9 col-lg-8">
-                      <div class="card-body d-flex flex-column" style="height: 100%;">
-                        <div class="row mb-0">
-                          <div class="col-8">
-                            <h4 class="card-title">Propiedad 4 amb. en San Bernardo</h4>
-                          </div>
-                          <div class="col-4 text-end">
-                            <div class="d-flex flex-column">
-                              <div style="font-size: 0.7rem;">PRECIO</div>
-                              <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 85k</div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-2">
-                          <p class="card-text">Dirección: Panamá 344</p>
-                        </div>
-                        <div class="row mb-auto">
-                          <p class="card-text">Parquizada + 2cocheras</p>
-                        </div>
-                        <div class="container-fluid px-0 mt-2 align-self-end">
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>250
-                                m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>1</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>2</p>
-                            </div>
-                          </div>
-                          <div class="row my-0">
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
-                                </strong>380m<sup>2</sup></p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>2</p>
-                            </div>
-                            <div class="col-4">
-                              <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
-                            </div>
-                          </div>
-                        </div>
-  
-                      </div>
-                    </div>
-                  </div>
-                </div>
-  
+          
+              <!-- Botón aplicar -->
+              <div class="d-block text-center mb-4">
+                <button type="button" class="btn btn-primary btn-sm">Aplicar</button>
               </div>
             </div>
+          </aside>
+          <!-- fin Aside filtros -->
+
+          <!-- spacer para pantallas chicas -->
+          <div class="d-lg-none mb-5"></div>
+      
+          <!-- Cards propiedades -->
+          <div class="col-lg-9">
+            <!-- <div class="col-md-8 col-lg-9 mb-auto"> -->
+          
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-sm-4">
+                  <img src="img/2dpto-juramento.png" class="img-fluid img-auto-round" alt="foto propiedad">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body d-flex flex-column" style="height: 100%;">
+                    <div class="row mb-0">
+                      <div class="col-8">
+                        <h4 class="card-title">Departamento 2 ambientes en V. Urquiza </h4>
+                      </div>
+                      <div class="col-4 text-end">
+                        <div class="d-flex flex-column">
+                          <div style="font-size: 0.7rem;">PRECIO</div>
+                          <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 114k</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <p class="card-text">Dirección: Juramento 5100</p>
+                    </div>
+                    <div class="row mb-auto">
+                      <p class="card-text">Expensas aprox. AR$114.000</p>
+                    </div>
+                    <div class="container-fluid px-0 mt-2 align-self-end">
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>42
+                            m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>1</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
+                        </div>
+                      </div>
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                            </strong>42m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>1</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-sm-4">
+                  <img src="img/3dpto_patio.png" class="img-fluid img-auto-round" alt="foto propiedad">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body d-flex flex-column" style="height: 100%;">
+                    <div class="row mb-0">
+                      <div class="col-8">
+                        <h4 class="card-title">Departamento c/ jardín en San Cristóbal</h4>
+                      </div>
+                      <div class="col-4 text-end">
+                        <div class="d-flex flex-column">
+                          <div style="font-size: 0.7rem;">PRECIO</div>
+                          <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 149.9k</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <p class="card-text">Dirección: consultar</p>
+                    </div>
+                    <div class="row mb-auto">
+                      <p class="card-text">Apto crédito</p>
+                    </div>
+                    <div class="container-fluid px-0 mt-2 align-self-end">
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>50
+                            m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>1</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
+                        </div>
+                      </div>
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                            </strong>98m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>2</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-sm-4">
+                  <img src="img/4dpto_loft.png" class="img-fluid img-auto-round" alt="foto propiedad">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body d-flex flex-column" style="height: 100%;">
+                    <div class="row mb-0">
+                      <div class="col-8">
+                        <h4 class="card-title">Departamento 2 amb. t/ loft en Martínez</h4>
+                      </div>
+                      <div class="col-4 text-end">
+                        <div class="d-flex flex-column">
+                          <div style="font-size: 0.7rem;">PRECIO</div>
+                          <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 99.5k</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <p class="card-text">Dirección: consultar</p>
+                    </div>
+                    <div class="row mb-auto">
+                      <p class="card-text">S/ expensas</p>
+                    </div>
+                    <div class="container-fluid px-0 mt-2 align-self-end">
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>51
+                            m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>1</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>No</p>
+                        </div>
+                      </div>
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                            </strong>51m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>1</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-sm-4">
+                  <img src="img/5costa-santa_Clara.png" class="img-fluid img-auto-round" alt="foto propiedad">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body d-flex flex-column" style="height: 100%;">
+                    <div class="row mb-0">
+                      <div class="col-8">
+                        <h4 class="card-title">Propiedad + quincho en S. Clara del Mar</h4>
+                      </div>
+                      <div class="col-4 text-end">
+                        <div class="d-flex flex-column">
+                          <div style="font-size: 0.7rem;">PRECIO</div>
+                          <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 120k</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <p class="card-text">Dirección: consultar</p>
+                    </div>
+                    <div class="row mb-auto">
+                      <p class="card-text">RESERVADA!!</p>
+                    </div>
+                    <div class="container-fluid px-0 mt-2 align-self-end">
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>200
+                            m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>2</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>Si</p>
+                        </div>
+                      </div>
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                            </strong>300m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>3</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-sm-4">
+                  <img src="img/6costa-San_B.png" class="img-fluid img-auto-round" alt="foto propiedad">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body d-flex flex-column" style="height: 100%;">
+                    <div class="row mb-0">
+                      <div class="col-8">
+                        <h4 class="card-title">Propiedad 4 amb. en San Bernardo</h4>
+                      </div>
+                      <div class="col-4 text-end">
+                        <div class="d-flex flex-column">
+                          <div style="font-size: 0.7rem;">PRECIO</div>
+                          <div style="font-size: 1.5rem;"><span style="font-size: 0.7rem;">$USD</span> 85k</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <p class="card-text">Dirección: Panamá 344</p>
+                    </div>
+                    <div class="row mb-auto">
+                      <p class="card-text">Parquizada + 2cocheras</p>
+                    </div>
+                    <div class="container-fluid px-0 mt-2 align-self-end">
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup.: </strong>250
+                            m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Baños: </strong>1</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Cochera: </strong>2</p>
+                        </div>
+                      </div>
+                      <div class="row my-0">
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Sup. total:
+                            </strong>380m<sup>2</sup></p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Dormitorios: </strong>2</p>
+                        </div>
+                        <div class="col-4">
+                          <p style="font-size: 0.8rem;" class="card-text mb-0"><strong>Otros: </strong></p>
+                        </div>
+                      </div>
+                    </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+          
           </div>
-        </div>
+          </div>
+      
         <!-- fin Cards propiedades -->
       </section>
       <!-- fin Propiedades -->
