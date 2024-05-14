@@ -187,6 +187,7 @@ button:hover {
 /* title-bar */
 #title-bar-container {
     background-color: #e9ddec;
+    box-shadow: 0 5px 5px #00000080;
     z-index: 9999;
 }
 
