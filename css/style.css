@@ -766,11 +766,12 @@ main h2 {
 
 @media (max-width: 572px) {
     /* Hacemos el menu sticky para mobile */
-    #title-bar-container{
-        position: fixed;
+    header {
+        position: sticky;
         top: 0;
-        width: 100%;
+        z-index: 3;
     }
+
     #container-cards{
         display: flex;
         flex-direction: column;
