@@ -136,6 +136,14 @@ button:hover {
 /* Fin Estilos de botón */
 /* fin Clases genéricas */
 
+/* Hacemos el menu sticky */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+/*  */
+
 #top-banner-container {
     background-color: #c4b9c6;
 }
@@ -188,7 +196,7 @@ button:hover {
 #title-bar-container {
     background-color: #e9ddec;
     box-shadow: 0 5px 5px #00000080;
-    z-index: 9999;
+    /* z-index: 9999; */
 }
 
 #logo {
@@ -765,35 +773,7 @@ main h2 {
     justify-content: center;
 }
 
-
-#body-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-#top-banner-container {
-    order: 1;
-}
-
-header {
-    order: 2;
-    position: sticky;
-    top: 0;
-    z-index: 11;
-}
-
-main {
-    order: 3;
-}
-
-footer {
-    order: 4;
-}
-
 @media (max-width: 572px) {
-    /* Hacemos el menu sticky para mobile */
-
-
     #container-cards{
         display: flex;
         flex-direction: column;
