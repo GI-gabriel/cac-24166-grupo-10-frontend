@@ -809,6 +809,14 @@ main h2 {
     min-width: 150px;
 }
 
+.card-anchor {
+    display: block;
+}
+
+.card-anchor:hover>div{
+    transform: scale(1.02);
+}
+
 @media (min-width: 576px) {
     .img-auto-round {
         border-radius: 6px 0 0 0;    
