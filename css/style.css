@@ -27,6 +27,7 @@ a:hover {
     color: initial;
     text-decoration: none;
 }
+
 /* fin Normalize */
 
 /* Clases genéricas */
@@ -54,6 +55,7 @@ a:hover {
     font-weight: 700;
     font-style: italic;
 }
+
 /* fin Tipografías */
 
 .mw1040 {
@@ -94,7 +96,8 @@ a:hover {
 
 .card-hov>a div.texto-card {
     display: block;
-    width: fit-content;;
+    width: fit-content;
+    ;
     padding-right: 15px;
     position: absolute;
     bottom: 15px;
@@ -127,12 +130,14 @@ a:hover {
 .card-hov>a:hover div.overlay-card::after {
     opacity: 0;
 }
+
 /* fin Card con transparencia */
 
 /* Estilos de botón */
 button:hover {
     cursor: pointer;
 }
+
 /* Fin Estilos de botón */
 /* fin Clases genéricas */
 
@@ -195,6 +200,7 @@ main {
 #redes-banner>ul {
     width: 90px;
 }
+
 /* fin top-banner */
 
 /* title-bar */
@@ -316,6 +322,7 @@ main {
 }
 
 @media (max-width: 768px) {
+
     #mail>span,
     #tel>span {
         display: none !important;
@@ -342,6 +349,7 @@ main {
         width: auto;
     }
 }
+
 /* fin title-bar */
 
 /* search-bar */
@@ -366,8 +374,8 @@ main {
     width: 100%;
     top: 0;
     left: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(255,255,255,0.3) 40%, rgba(255,255,255,0.7) 60%)
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, 0.7) 60%)
 }
 
 #search-nav-bar,
@@ -403,7 +411,8 @@ main {
     padding-bottom: 10px;
 }
 
-#search-nav-bar a, .container-tarjetas a {
+#search-nav-bar a,
+.container-tarjetas a {
     display: block;
     text-align: center;
     border-style: none;
@@ -425,6 +434,7 @@ main {
     #search-nav-bar {
         max-width: 420px;
     }
+
     #search-nav-bar a {
         width: 200px;
     }
@@ -435,6 +445,7 @@ main {
         max-width: 400px;
     }
 }
+
 /* fin search bar */
 
 /* Sección búsqueda por categorías */
@@ -488,6 +499,7 @@ main h2 {
         flex-wrap: wrap;
     }
 }
+
 /* fin Sección búsqueda por categorías */
 
 /* footer */
@@ -678,6 +690,7 @@ main h2 {
         font-size: 0.65rem;
     }
 }
+
 /* fin footer */
 
 /* Estilos de botón Whatsapp */
@@ -702,6 +715,7 @@ main h2 {
 .whatsapp-icon {
     margin-top: 13px;
 }
+
 /* Fin Estilos de botón Whatsapp */
 
 
@@ -722,7 +736,7 @@ main h2 {
     padding-bottom: 40px;
 }
 
-.tasa{
+.tasa {
     display: inline;
     /* Animación de los iconos de tasaciones */
     animation: animacionTas 2s ease 2s 1 normal none;
@@ -731,49 +745,50 @@ main h2 {
 /* Animacion de las tasaciones - ver arriba */
 @keyframes animacionTas {
     0% {
-      animation-timing-function: ease-in;
-      opacity: 0.5;
-      transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        opacity: 0.5;
+        transform: translateY(-45px);
     }
-  
+
     24% {
-      opacity: 1;
+        opacity: 1;
     }
-  
+
     40% {
-      animation-timing-function: ease-in;
-      transform: translateY(-24px);
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
     }
-  
+
     65% {
-      animation-timing-function: ease-in;
-      transform: translateY(-12px);
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
     }
-  
+
     82% {
-      animation-timing-function: ease-in;
-      transform: translateY(-6px);
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
     }
-  
+
     93% {
-      animation-timing-function: ease-in;
-      transform: translateY(-4px);
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
     }
-  
+
     25%,
     55%,
     75%,
     87% {
-      animation-timing-function: ease-out;
-      transform: translateY(0px);
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
     }
-  
+
     100% {
-      animation-timing-function: ease-out;
-      opacity: 1;
-      transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
     }
-  }
+}
+
 /* Fin Estilos de Tasaciones */
 
 /* Propiedades */
@@ -813,21 +828,22 @@ main h2 {
     display: block;
 }
 
-.card-anchor:hover>div{
+.card-anchor:hover>div {
     transform: scale(1.02);
 }
 
 @media (min-width: 576px) {
     .img-auto-round {
-        border-radius: 6px 0 0 0;    
+        border-radius: 6px 0 0 0;
     }
-  }
+}
 
 @media (min-width: 768px) {
     .img-auto-round {
-        border-radius: 6px 0 0 6px;    
+        border-radius: 6px 0 0 6px;
     }
-  }
+}
+
 /* fin Bootstrap cards */
 /* fin Propiedades */
 
@@ -838,14 +854,14 @@ main h2 {
     font-style: normal;
 }
 
-.long-p h2{
+.long-p h2 {
     font-family: "Istok Web", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 1rem;
 }
 
-.long-p h3{
+.long-p h3 {
     margin-bottom: 0.3rem;
     font-family: "Istok Web", sans-serif;
     font-weight: 700;
@@ -853,7 +869,7 @@ main h2 {
     font-size: 0.85rem;
 }
 
-.long-p p{
+.long-p p {
     font-size: 0.7rem;
     text-align: justify;
 }
@@ -862,7 +878,7 @@ main h2 {
     margin-top: 0;
 }
 
-.long-p a{
+.long-p a {
     font-weight: bold;
     text-decoration: underline;
 }
@@ -871,33 +887,53 @@ main h2 {
 
 
 /* Animaciones del sobre y el télefono */
-.move:hover{
+.move:hover {
     animation: customAni 2s ease 0s 1 normal none;
 }
 
 @keyframes customAni {
     0% {
-      transform: translate(0);
+        transform: translate(0);
     }
-  
+
     20% {
-      transform: translate(-2px, 2px);
+        transform: translate(-2px, 2px);
     }
-  
+
     40% {
-      transform: translate(-2px, -2px);
+        transform: translate(-2px, -2px);
     }
-  
+
     60% {
-      transform: translate(2px, 2px);
+        transform: translate(2px, 2px);
     }
-  
+
     80% {
-      transform: translate(2px, -2px);
+        transform: translate(2px, -2px);
     }
-  
+
     100% {
-      transform: translate(0);
+        transform: translate(0);
     }
-  }
+}
+
 /* Fin de Animaciones del sobre y el télefono */
+
+/* Nosotros */
+@media (min-width: 992px) {
+    #nosotros-texto {
+        background:
+            linear-gradient(90deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0.9) 50%, rgba(247, 246, 246, 0.2) 100%),
+            url('../img/llaves.jpg') right;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 991px) {
+    .myPadding {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+/* fin Nosotros */
