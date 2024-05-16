@@ -920,6 +920,22 @@ main h2 {
 /* Fin de Animaciones del sobre y el télefono */
 
 /* Nosotros */
+#nosotros-texto {
+    background:
+        linear-gradient(180deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0.8) 20%, rgba(247, 246, 246, 0.5) 100%),
+        url('../img/llaves-sm.jpg') right;
+    background-size: cover;
+}
+
+@media (min-width: 576px) {
+    #nosotros-texto {
+        background:
+            linear-gradient(180deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0.8) 20%, rgba(247, 246, 246, 0.5) 100%),
+            url('../img/llaves.jpg') right;
+        background-size: cover;
+    }
+}
+
 @media (min-width: 992px) {
     #nosotros-texto {
         background:
