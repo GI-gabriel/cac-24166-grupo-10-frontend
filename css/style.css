@@ -922,7 +922,8 @@ main h2 {
 /* Nosotros */
 #nosotros-texto {
     background:
-        linear-gradient(180deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0.8) 20%, rgba(247, 246, 246, 0.5) 100%),
+        linear-gradient(180deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0.9) 20%, rgba(247, 246, 246, 0.65) 100%),
+        linear-gradient(0deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0) 10%, rgba(247, 246, 246, 0) 100%),
         url('../img/llaves-sm.jpg') right;
     background-size: cover;
 }
@@ -930,7 +931,8 @@ main h2 {
 @media (min-width: 576px) {
     #nosotros-texto {
         background:
-            linear-gradient(180deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0.8) 20%, rgba(247, 246, 246, 0.5) 100%),
+            linear-gradient(180deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0.9) 20%, rgba(247, 246, 246, 0.65) 100%),
+            linear-gradient(0deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0) 10%, rgba(247, 246, 246, 0) 100%),
             url('../img/llaves.jpg') right;
         background-size: cover;
     }
@@ -940,15 +942,9 @@ main h2 {
     #nosotros-texto {
         background:
             linear-gradient(90deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0.9) 50%, rgba(247, 246, 246, 0.2) 100%),
+            linear-gradient(0deg, rgba(247, 246, 246, 1) 0%, rgba(247, 246, 246, 0) 10%, rgba(247, 246, 246, 0) 100%),
             url('../img/llaves.jpg') right;
         background-size: cover;
-    }
-}
-
-@media (max-width: 991px) {
-    .myPadding {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
     }
 }
 
