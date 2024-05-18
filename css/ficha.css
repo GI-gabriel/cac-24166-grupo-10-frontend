@@ -25,3 +25,8 @@
 .descrip-prop p {
   font-size: 0.9rem;
 }
+
+#mapa-maps {
+  width: 100%;
+  height: 300px;
+}
