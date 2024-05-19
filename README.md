@@ -33,9 +33,9 @@ Home
 ---
 
 ## Equipo
-- Claudia Miranda (desarrollo HTML, CSS, JS, Bootstrap)
-- Michel Diamant (desarrollo HTML, CSS, Diseño UX/UI)
-- Gabriel Iarussi (desarrollo HTML, CSS, Diseño UX/UI)
+- [Claudia Miranda](https://github.com/claumiranda) - (desarrollo HTML, CSS, JS, Bootstrap)
+- [Michel Diamant](https://github.com/mikeowl) - (desarrollo HTML, CSS, Diseño UX/UI)
+- [Gabriel Iarussi](https://github.com/GI-gabriel) - (desarrollo HTML, CSS, Diseño UX/UI)
 
 ## Etapas del proyecto
 - **Diseño y planificación:** 1 semana
