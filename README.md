@@ -7,14 +7,14 @@ Codo a Codo 4.0, comisión 24166, grupo 10
 Personas interesadas en comprar, vender o realizar inversiones en el mercado de bienes raíces.
 
 ## Estructura del sitio
-Home  
-&emsp;|---- Búsqueda y filtrado de Propiedades  
+[Home](https://inmobiliarialorem.netlify.app/)  
+&emsp;|---- [Búsqueda y filtrado de Propiedades](https://inmobiliarialorem.netlify.app/propiedades)  
 &emsp;|&emsp;&emsp;|  
-&emsp;|&emsp;&emsp;|---- Ficha de la propiedad  
+&emsp;|&emsp;&emsp;|---- [Ficha de la propiedad](https://inmobiliarialorem.netlify.app/ficha)  
 &emsp;|  
-&emsp;|---- Tasaciones  
-&emsp;|---- Nosotros  
-&emsp;|---- Formulario de contacto  
+&emsp;|---- [Tasaciones](https://inmobiliarialorem.netlify.app/tasaciones)  
+&emsp;|---- [Nosotros](https://inmobiliarialorem.netlify.app/nosotros)  
+&emsp;|---- [Formulario de contacto](https://inmobiliarialorem.netlify.app/contacto)  
 
 ## Estilo
 - **Estilo visual:** Elegante, colores claros, pocos efectos de animación y discretos, bordes redondeados.
