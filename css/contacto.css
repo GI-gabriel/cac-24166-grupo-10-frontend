@@ -22,7 +22,7 @@ h3 {
     unicode-bidi: isolate;
 }
 
-.container-md {
+/* .container-md {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -62,16 +62,18 @@ h3 {
 
 .col-md-8 a {
     text-decoration: none;
-}
+} */
 
 .redes-links {
-    display: flex;
+    /* display: flex;
     list-style: none;
-    padding-left: 0%;
+    padding-left: 0%; */
+	margin-left: -15px;
+	margin-right: -15px;
 }
 
 .list-link-item {
-    margin: 0px 15px;
+    padding: 0px 15px;
 }
 
 .info {
