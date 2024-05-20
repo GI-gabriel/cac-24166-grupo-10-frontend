@@ -68,6 +68,7 @@ h3 {
     /* display: flex;
     list-style: none;
     padding-left: 0%; */
+	width: fit-content;
 	margin-left: -15px;
 	margin-right: -15px;
 }
