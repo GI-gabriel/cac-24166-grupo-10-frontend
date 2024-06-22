@@ -721,9 +721,9 @@ main h2 {
 
 /* Inicio Estilos de Tasaciones */
 #container-tasaciones {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
     width: 100%;
     background: rgb(250, 241, 252);
     background: linear-gradient(90deg, rgb(250, 227, 255) 0%, rgba(122, 82, 161, 0.5943627450980392) 38%, rgba(255, 255, 255, 1) 100%);
@@ -734,6 +734,16 @@ main h2 {
     font-size: 28px;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+.tasaciones li {
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 576px) {
+    .tasaciones {
+        font-size: 20px;
+    }
 }
 
 .tasa {
