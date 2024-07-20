@@ -1,4 +1,3 @@
-[https://inmobiliarialorem.netlify.app/](https://inmobiliarialorem.netlify.app/)
 # Sitio web para empresa de servicios inmobiliarios
 Trabajo práctico integrador Front-End  
 Codo a Codo 4.0, comisión 24166, grupo 10  
@@ -7,14 +6,14 @@ Codo a Codo 4.0, comisión 24166, grupo 10
 Personas interesadas en comprar, vender o realizar inversiones en el mercado de bienes raíces.
 
 ## Estructura del sitio
-[Home](https://inmobiliarialorem.netlify.app/)  
-&emsp;|---- [Búsqueda y filtrado de Propiedades](https://inmobiliarialorem.netlify.app/propiedades)  
+[Home]
+&emsp;|---- [Búsqueda y filtrado de Propiedades]
 &emsp;|&emsp;&emsp;|  
-&emsp;|&emsp;&emsp;|---- [Ficha de la propiedad](https://inmobiliarialorem.netlify.app/ficha)  
+&emsp;|&emsp;&emsp;|---- [Ficha de la propiedad]
 &emsp;|  
-&emsp;|---- [Tasaciones](https://inmobiliarialorem.netlify.app/tasaciones)  
-&emsp;|---- [Nosotros](https://inmobiliarialorem.netlify.app/nosotros)  
-&emsp;|---- [Formulario de contacto](https://inmobiliarialorem.netlify.app/contacto)  
+&emsp;|---- [Tasaciones]
+&emsp;|---- [Nosotros]
+&emsp;|---- [Formulario de contacto] 
 
 ## Estilo
 - **Estilo visual:** Elegante, colores claros, pocos efectos de animación y discretos, bordes redondeados.
