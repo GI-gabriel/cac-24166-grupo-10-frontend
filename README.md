@@ -6,14 +6,14 @@ Codo a Codo 4.0, comisión 24166, grupo 10
 Personas interesadas en comprar, vender o realizar inversiones en el mercado de bienes raíces.
 
 ## Estructura del sitio
-[Home]
-&emsp;|---- [Búsqueda y filtrado de Propiedades]
+[Home]  
+&emsp;|---- [Búsqueda y filtrado de Propiedades]  
 &emsp;|&emsp;&emsp;|  
-&emsp;|&emsp;&emsp;|---- [Ficha de la propiedad]
+&emsp;|&emsp;&emsp;|---- [Ficha de la propiedad]  
 &emsp;|  
-&emsp;|---- [Tasaciones]
-&emsp;|---- [Nosotros]
-&emsp;|---- [Formulario de contacto] 
+&emsp;|---- [Tasaciones]  
+&emsp;|---- [Nosotros]  
+&emsp;|---- [Formulario de contacto]  
 
 ## Estilo
 - **Estilo visual:** Elegante, colores claros, pocos efectos de animación y discretos, bordes redondeados.
